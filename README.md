@@ -14,6 +14,7 @@ Simpan semua file di atas dengan nama yang sesuai
 # Jalankan perintah berikut di terminal:
 npm install
 npm start
+# Aplikasi akan berjalan di http://localhost:3000
 # Fitur yang diimplementasikan:
 Peta Indonesia real menggunakan Leaflet dan OpenStreetMap
 Menggambar dengan kuas kotak-kotak retro
