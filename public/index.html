@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoDraw Live - Menggambar Peta Indonesia Secara Real-time</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title">IndoDraw Live</div>
+        <div class="subtitle">Menggambar Peta Indonesia Secara Real-time</div>
+    </div>
+
+    <div class="sidebar">
+        <div class="toggle-sidebar">◀</div>
+        
+        <div class="section">
+            <div class="section-title">🎨 Warna & Kuas</div>
+            <input type="color" class="color-picker" value="#ff0000" id="color-picker">
+            <div class="brush-size">
+                <input type="range" min="5" max="50" value="15" id="brush-size">
+                <div class="brush-value">Ukuran: <span id="brush-value">15</span>px</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🛠️ Alat</div>
+            <div class="tools">
+                <div class="tool-btn" id="undo-btn">Undo</div>
+                <div class="tool-btn" id="redo-btn">Redo</div>
+                <div class="tool-btn" id="clear-btn">Clear</div>
+                <div class="tool-btn" id="download-btn">Download</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">👥 Online</div>
+            <div class="online-users">
+                <div class="user-count" id="user-count">0</div>
+                <div class="user-label">Pengguna Aktif</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <canvas id="canvas-overlay"></canvas>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
