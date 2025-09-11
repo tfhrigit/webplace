@@ -1,5 +1,4 @@
-# webplace
-# Root Folder (indodraw-live/)
+## Root Folder (indodraw-live/)
 package.json - Konfigurasi project dan dependencies
 server.js - Backend server menggunakan Node.js
 # Public Folder (public/)
